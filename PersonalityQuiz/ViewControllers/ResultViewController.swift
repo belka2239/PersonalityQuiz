@@ -17,21 +17,9 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-//        updateResultVC()
+        updateResultVC()
     }
-    
-//    private func updateResultVC() {
-//        let animals: [Animal] = []
-//
-//        for animal in answers {
-//            if let animalTypeCount = answers(animal) {
-//                animalTypeCount.append(animals)
-//            }
-//        }
-//
-//    }
-    
-/*
+
     private func updateResultVC() {
         var frequentAnimals: [Animal: Int] = [:]
         let animals = answers.map{ $0.animal }
@@ -49,10 +37,9 @@ class ResultViewController: UIViewController {
         
         updateUI(with: mostFrequentAnimals)
     }
-     */
     
-//    private func updateUI(with animal: Animal) {
-//        animalTypeLabel.text = "Вы - \(animal.rawValue)!"
-//        descriptionLabel.text = animal.definition
-//    }
+    private func updateUI(with animal: Animal) {
+        animalTypeLabel.text = "Вы - \(animal.rawValue)!"
+        descriptionLabel.text = animal.definition
+    }
 }
